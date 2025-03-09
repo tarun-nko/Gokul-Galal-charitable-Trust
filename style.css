@@ -187,3 +187,113 @@
     margin-top: 30px;
 
 }
+
+.medium-image {
+  max-width: 100%;       /* Ensures image never exceeds its container */
+  width: 500px;          /* Default medium size */
+  height: auto;          /* Maintains aspect ratio */
+  display: block;        /* Removes extra space below image */
+  margin: 0 auto;        /* Centers the image */
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 768px) {
+  .medium-image {
+    width: 90%;          /* Uses percentage on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .medium-image {
+    width: 100%;         /* Full width on mobile */
+  }
+}
+.large-image {
+  max-width: 100%;       /* Ensures image never exceeds its container */
+  width: 800px;          /* Default large size */
+  height: auto;          /* Maintains aspect ratio */
+  display: block;        /* Removes extra space below image */
+  margin: 0 auto;        /* Centers the image */
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 1024px) {
+  .large-image {
+    width: 95%;          /* Slightly reduced on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .large-image {
+    width: 90%;          /* More reduction on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .large-image {
+    width: 100%;         /* Full width on mobile */
+  }
+}
+
+.card-img-top.rounded-0 {
+  max-width: 100%;       /* Ensures image never exceeds its container */
+  width: 100%;           /* Full width of its container */
+  height: auto;          /* Maintains aspect ratio */
+  display: block;        /* Removes extra space below image */
+  border-radius: 8px !important; /* Adds rounded corners */
+  object-fit: cover;     /* Covers area without distortion */
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 992px) {
+  .card-img-top.rounded-0 {
+    max-height: 400px;   /* Limit height on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-img-top.rounded-0 {
+    max-height: 350px;   /* Smaller height on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-img-top.rounded-0 {
+    max-height: 250px;   /* Even smaller height on mobile */
+    border-radius: 6px !important; /* Slightly smaller radius on mobile */
+  }
+}
+
+.small-image {
+  width: 250px;          /* Set default small size */
+  height: 250px;         /* Equal height for uniformity */
+  object-fit: cover;     /* Ensures image fills area without distortion */
+  max-width: 100%;       /* Prevents overflow on small screens */
+  display: inline-block; /* Allows images to sit side by side */
+  margin: 10px;          /* Adds spacing between images */
+  border-radius: 4px;    /* Optional: slightly rounded corners */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .small-image {
+    width: 200px;        /* Slightly smaller on tablets */
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .small-image {
+    width: 150px;        /* Even smaller on mobile */
+    height: 150px;
+    margin: 5px;         /* Reduced margin on mobile */
+  }
+}
+
+/* For image container/gallery */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
