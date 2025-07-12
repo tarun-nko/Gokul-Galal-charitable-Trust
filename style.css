@@ -11,13 +11,13 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-header.is-sticky {
     position: fixed;
-    box-shadow: 0 5px 16px rgba(255, 255, 255, 0.1) padding: 8px 0;
+    box-shadow: 0 5px 16px rgba(255, 255, 255, 0.1);
+    padding: 8px 0;
     backdrop-filter: blur(20px);
     animation: slideDown 0.35s ease-out;
     width: 100%;
     z-index: 1;
     background-color: #FFFFFF;
-
 }
 
 .page-header.is-sticky img {
@@ -79,7 +79,7 @@
     transform: translate(-50%, -50%);
 }
 
-.secion-2 {
+.section-2 {
     background-color: #1C2126;
     color: white;
 }

@@ -6,7 +6,7 @@ function openModal(imageElement) {
     modal.show();
 }
 
-// Hrader
+// Header
 const header = document.querySelector(".page-header");
 const toggleClass = "is-sticky";
 
